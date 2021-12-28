@@ -101,6 +101,7 @@ Sample Code:
 </div>
 ```
 > Sample example : [Anchor Embed - Expand link](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_link.html)
+
 **Inline embed :** Dailymotion Video Tiles will be expanded inline which will grow vertically based on the content of the video tiles
 Sample Code: 
 ```html
