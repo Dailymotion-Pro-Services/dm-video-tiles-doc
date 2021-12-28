@@ -48,9 +48,9 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 | playlistIds | string | **Playlist Components :** To create playlist based on `{PLAYLIST_ID}`. Learn more on [how to create, sort, feed and embed playlist](https://faq.dailymotion.com/hc/en-us/sections/360003674799-Playlist).  Please use `","` separator to use more than one `{PLAYLIST_ID}`. |
 | topicVideos | string | **Playlist Components :** To create based on topic. By using [video-tags-filter API](https://developer.dailymotion.com/api/#video-tags-filter), playlist will be created. Please use `","` separator to use more than one topic.  |
 | channels | string | **list Components :** To create list of channels as carousel slideshow. On click of this list it will redirect to Dailymotion channel's page. Please use `","` separator to use more than one topic.  |
-| type | string | Set to `"anchor"` which will show *Feature Video Component* only. After you click the anchor, Dailymotion video tiles will expand and the rest *Playlist Components* will render. To know more check [Different Embed options]() |
-| expandLink | string | You can add a page url that ties to anchor. Clicking on the anchor will open that page in another tab. To know more check [Different Embed options]() |
-| expandType | string | Set "popup" to expand Dailymotion video tiles as popup after clicking on the anchor link. To know more check [Different Embed options]() |
+| type | string | Set to `"anchor"` which will show *Feature Video Component* only. After you click the anchor, Dailymotion video tiles will expand and the rest *Playlist Components* will render. To know more check [Different Embed options](#different-embed-options) |
+| expandLink | string | You can add a page url that ties to anchor. Clicking on the anchor will open that page in another tab. To know more check [Different Embed options](#different-embed-options) |
+| expandType | string | Set "popup" to expand Dailymotion video tiles as popup after clicking on the anchor link. To know more check [Different Embed options](#different-embed-options) |
 
 ### Different Embed options :
     By default Dailymotion Video Tiles expand inline which will horizontally fill the width of its parent element and grow vertically based on the content of the video tiles. By using `Anchor` Dailymotion Video Tiles loads *Feature Video Component* only as preview . Anchor can be linked to another page or popup in same page to see expanded video tiles. Check below to see different embed options.
