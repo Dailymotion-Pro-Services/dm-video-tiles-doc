@@ -43,8 +43,7 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 | Name | Type | Description |
 | :---: | :---: | --- |
 | owners <br /> `Mandatory` | string | You need to put the username of the channels from which the script will search content. If your channel name URL is www.dailymotion.com/channelABC then your username is channelABC. This is case sensitive, meaning channelABC is not the same as Channelabc. To put more than 1 you can separate by ","
-|
-| PlayerId <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players) in the player tab, inside the embed menu. |
+| playerId <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players) in the player tab, inside the embed menu. |
 | featureVideo <br /> `Mandatory` | string | **Feature Video Component :** Add video xid to feature Dailymotion Video Tiles|
 | highlightVideos | string | **Playlist Components :** To create playlist based video xids. Please use `","` separator while adding video xids.|
 | playlistIds | string | **Playlist Components :** To create playlist based on `{PLAYLIST_ID}`. Learn more on [how to create, sort, feed and embed playlist](https://faq.dailymotion.com/hc/en-us/sections/360003674799-Playlist).  Please use `","` separator to use more than one `{PLAYLIST_ID}`. |
