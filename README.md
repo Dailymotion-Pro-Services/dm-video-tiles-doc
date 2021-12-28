@@ -53,7 +53,7 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 | expandType | string | Set "popup" to expand Dailymotion video tiles as popup after clicking on the anchor link. To know more check [Different Embed options-](#different-embed-options) |
 
 ### Different Embed options :
-    By default Dailymotion Video Tiles expand inline which will horizontally fill the width of its parent element and grow vertically based on the content of the video tiles. By using `Anchor` Dailymotion Video Tiles loads *Feature Video Component* only as preview . Anchor can be linked to another page or popup in same page to see expanded video tiles. Check below to see different embed options.
+By default Dailymotion Video Tiles expand inline which will horizontally fill the width of its parent element and grow vertically based on the content of the video tiles. By using `Anchor` Dailymotion Video Tiles loads *Feature Video Component* only as preview . Anchor can be linked to another page or popup in same page to see expanded video tiles. Check below to see different embed options.
     
 **Anchor with expanded popup :** When Anchor is cliked the expanded video tiles will open ad popup in same page.
 Sample Code: 
