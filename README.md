@@ -23,7 +23,6 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 ### Standard Embed Tag
 
 ```html
-<div class="dm-story" playlistId="{PLAYLIST_ID}" playerId="{PLAYER_ID}" style="height: 230px;"></div>
 <div class="dm-video-tiles"
     type="anchor"
     expandType="popup"
