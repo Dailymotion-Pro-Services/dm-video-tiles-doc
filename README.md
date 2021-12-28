@@ -1,7 +1,7 @@
 # Dailymotion Video Tiles
 
 Dailymotion Video Tiles is composed with two main components i.e., 
-- Feature Video Component : A top-of-the-page video wuth previews
+- Feature Video Component : A top-of-the-page video with previews
 - Playlist Components : A list of videos/channels as carousel slideshow
 
 The playlist components can be different types based on [parameters](#parameters-available). 
@@ -42,7 +42,6 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 
 | Name | Type | Description |
 | :---: | :---: | --- |
-
 | owners <br /> `Mandatory` | string | You need to put the username of the channels from which the script will search content. If your channel name URL is www.dailymotion.com/channelABC then your username is channelABC. This is case sensitive, meaning channelABC is not the same as Channelabc. To put more than 1 you can separate by ","
 |
 | PlayerId <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players) in the player tab, inside the embed menu. |
@@ -64,4 +63,4 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 - [Anchor Embed - Expand link](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_link.html)
 - [Anchor Embed - Popup expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_popup.html)
 - [Anchor Embed - Inline expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_inline.html)
-- [Inline Embed](https://staging.dmvs-apac.com/dm-video-tiles/lab/inline_embed.html
+- [Inline Embed](https://staging.dmvs-apac.com/dm-video-tiles/lab/inline_embed.html)
