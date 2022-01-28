@@ -1,23 +1,23 @@
 # Dailymotion Video Tiles
 
-Dailymotion Video Tiles is composed with two main components i.e., 
+Dailymotion Video Tiles has two main components i.e., 
 - Feature Video Component : A top-of-the-page video with previews
 - Playlist Components : A list of videos/channels as carousel slideshow
 
-The playlist components can be different types based on [parameters](#parameters-available). 
+The playlist components can be customised based on a list of [parameters](#parameters-available). 
 
-To use Dailymotion Video Tiles you should create a player first through [Partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players) and get the `{PLAYER_ID}`.
+To use Dailymotion Video Tiles you should create a player first through your [Partner HQ](https://www.dailymotion.com/partner/embed/players) and get the `{PLAYER_ID}` from the UI once the template is created.
 
 
 ### Start Embedding
 
 You need to do 2 things to embed the Dailymotion Video Tiles.
 
-1. Put the [script](https://staging.dmvs-apac.com/dm-video-tiles/dm-video-tiles.js) at the very bottom before `body` end in your website
+1. Add the [script](https://staging.dmvs-apac.com/dm-video-tiles/dm-video-tiles.js) at the very bottom before `body` end in your website
 ```js
 <script src="https://staging.dmvs-apac.com/dm-video-tiles/dm-video-tiles.js"></script>
 ```
-3. Add `<div class="dm-video-tiles" `[{PARAMS}](#parameters-available)`></div>` in your target of body content.
+3. Add `<div class="dm-video-tiles" `[{PARAMS}](#parameters-available)`></div>` in your target location within the body content.
 
 
 ### Standard Embed Tag
@@ -42,20 +42,20 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 | Name | Type | Description |
 | :---: | :---: | --- |
 | owners <br /> `Mandatory` | string | You need to put the username of the channels from which the script will search content. If your channel name URL is www.dailymotion.com/channelABC then your username is channelABC. This is case sensitive, meaning channelABC is not the same as Channelabc. To put more than 1 you can separate by ","
-| playerId <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players) in the player tab, inside the embed menu. |
-| featureVideo <br /> `Mandatory` | string | **Feature Video Component :** Add video xid to feature Dailymotion Video Tiles|
-| highlightVideos | string | **Playlist Components :** To create playlist based video xids. Please use `","` separator while adding video xids.|
-| playlistIds | string | **Playlist Components :** To create playlist based on `{PLAYLIST_ID}`. Learn more on [how to create, sort, feed and embed playlist](https://faq.dailymotion.com/hc/en-us/sections/360003674799-Playlist).  Please use `","` separator to use more than one `{PLAYLIST_ID}`. |
-| topicVideos | string | **Playlist Components :** To create based on topic. By using [video-tags-filter API](https://developer.dailymotion.com/api/#video-tags-filter), playlist will be created. Please use `","` separator to use more than one topic.  |
-| channels | string | **list Components :** To create list of channels as carousel slideshow. On click of this list it will redirect to Dailymotion channel's page. Please use `","` separator to use more than one topic.  |
-| type | string | Set to `"anchor"` which will show *Feature Video Component* only. After you click the anchor, Dailymotion video tiles will expand and the rest *Playlist Components* will render. To know more check [Different Embed options](#different-embed-options-) |
-| expandLink | string | You can add a page url that ties to anchor. Clicking on the anchor will open that page in another tab. To know more check [Different Embed options-](#different-embed-options) |
-| expandType | string | Set "popup" to expand Dailymotion video tiles as popup after clicking on the anchor link. To know more check [Different Embed options-](#different-embed-options) |
+| playerId <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/embed/players) in the player tab, inside the embed menu. |
+| featureVideo <br /> `Mandatory` | string | **Featured Video Component :** Add video xid to feature as your top Video Tile|
+| highlightVideos | string | **Playlist Components :** To create a playlist based on video xids. Please use `","` separator while adding video xids.|
+| playlistIds | string | **Playlist Components :** To create playlist based on `{PLAYLIST_ID}`. Learn more on [how to create, sort, feed and embed playlist](https://faq.dailymotion.com/hc/en-us/sections/360003674799-Playlist).  Please use `","` separator to use more than one `{PLAYLIST_ID}` for your tiles. |
+| topicVideos | string | **Playlist Components :** To create a tile based on topic. By using [video-tags-filter API](https://developer.dailymotion.com/api/#video-tags-filter), a playlist of video assets relevant to the topic chosen will be created. Please use `","` separator to use more than one topic.  |
+| channels | string | **list Components :** To create a list of dailymotion channels as a carousel slideshow. On click, it will redirect to the corresponding Dailymotion channel page. Please use `","` separator to feature more than one channel.  |
+| type | string | Set to `"anchor"` which will show *Featured Video Component* only. After you click the anchor, Dailymotion video tiles will expand and the *Playlist Components* will then render. To learn more, check the [different embed options](#different-embed-options-) |
+| expandLink | string | You can add a page url that ties to anchor. Clicking on the anchor will open that page in another tab. To learn more, check the [different embed options](#different-embed-options) |
+| expandType | string | Set "popup" to expand Dailymotion video tiles as a popup instead after clicking on the anchor link. To learn more, check the [different embed options](#different-embed-options) |
 
 ### Different Embed options :
-By default Dailymotion Video Tiles expand inline which will horizontally fill the width of its parent element and grow vertically based on the content of the video tiles. By using `Anchor` Dailymotion Video Tiles loads *Feature Video Component* only as preview . Anchor can be linked to another page or popup in same page to see expanded video tiles. Check below to see different embed options.
+By default Dailymotion Video Tiles expand inline which will horizontally fill the width of its parent element and expand vertically based on how much content you added to your Dailymotion Video Tiles. By using `Anchor`, Dailymotion Video Tiles loads *Feature Video Component* only as an animated preview . To see the expanded video tiles, Anchor can be linked to another page or a popup in same page. Check below to see the embed options.
     
-**Anchor with expanded popup :** When Anchor is cliked the expanded video tiles will open ad popup in same page.
+**Anchor with expanded popup :** When Anchor is clicked the expanded video tiles will open ad popup in same page.
 Sample Code: 
 ```html
 <div class="dm-video-tiles"
@@ -73,7 +73,7 @@ Sample Code:
 ```
 > Sample example : [Anchor Embed - Popup expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_popup.html)
 
-**Anchor with expanded inline :** When Anchor is cliked the expanded video tiles will open inline and it will grow vertically based on the content of the video tiles.
+**Anchor with expanded inline :** When Anchor is clicked, the expanded video tiles will open inline and it will grow vertically based on the content of the video tiles.
 Sample Code: 
 ```html
 <div class="dm-video-tiles"
@@ -90,7 +90,7 @@ Sample Code:
 ```
 > Sample example : [Anchor Embed - Inline expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_inline.html)
 
-**Anchor with expand link :** When Anchor is clicked it will open the link in another tab where you can have full view of the video tiles.
+**Anchor with expand link :** When Anchor is clicked, it will open the link in another tab where you can have full view of the video tiles.
 Sample Code: 
 ```html
 <div class="dm-video-tiles"
