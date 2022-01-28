@@ -43,8 +43,8 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 | :---: | :---: | --- |
 | owners <br /> `Mandatory` | string | You need to put the username of the channels from which the script will search content. If your channel name URL is www.dailymotion.com/channelABC then your username is channelABC. This is case sensitive, meaning channelABC is not the same as Channelabc. To put more than 1 you can separate by ","
 | playerId <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/embed/players) in the player tab, inside the embed menu. |
-| featureVideo <br /> `Mandatory` | string | **Featured Video Component :** Add video xid to feature as your top Video Tile|
-| highlightVideos | string | **Playlist Components :** To create a playlist based on video xids. Please use `","` separator while adding video xids.|
+| featureVideo <br /> `Mandatory` | string | **Featured Video Component :** Add `{VIDEO_XID}` to feature as your top Video Tile|
+| highlightVideos | string | **Playlist Components :** To create a playlist based on `{VIDEO_XID}`. Please use `","` separator while adding video xids.|
 | playlistIds | string | **Playlist Components :** To create playlist based on `{PLAYLIST_ID}`. Learn more on [how to create, sort, feed and embed playlist](https://faq.dailymotion.com/hc/en-us/sections/360003674799-Playlist).  Please use `","` separator to use more than one `{PLAYLIST_ID}` for your tiles. |
 | topicVideos | string | **Playlist Components :** To create a tile based on topic. By using [video-tags-filter API](https://developer.dailymotion.com/api/#video-tags-filter), a playlist of video assets relevant to the topic chosen will be created. Please use `","` separator to use more than one topic.  |
 | channels | string | **list Components :** To create a list of dailymotion channels as a carousel slideshow. On click, it will redirect to the corresponding Dailymotion channel page. Please use `","` separator to feature more than one channel.  |
