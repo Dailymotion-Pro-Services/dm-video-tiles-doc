@@ -71,7 +71,7 @@ Sample Code:
 >
 </div>
 ```
-> Sample example : [Anchor Embed - Popup expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_popup.html)
+> Sample example : [Anchor Embed - Popup expand](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/anchor_expand_popup.html)
 
 **Anchor with expanded inline :** When Anchor is clicked, the expanded video tiles will open inline and it will grow vertically based on the content of the video tiles.
 Sample Code: 
@@ -88,7 +88,7 @@ Sample Code:
 >
 </div>
 ```
-> Sample example : [Anchor Embed - Inline expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_inline.html)
+> Sample example : [Anchor Embed - Inline expand](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/anchor_expand_inline.html)
 
 **Anchor with expand link :** When Anchor is clicked, it will open the link in another tab where you can have full view of the video tiles.
 Sample Code: 
@@ -100,7 +100,7 @@ Sample Code:
   featureVideo="x85xu4t">
 </div>
 ```
-> Sample example : [Anchor Embed - Expand link](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_link.html)
+> Sample example : [Anchor Embed - Expand link](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/anchor_expand_link.html)
 
 **Inline embed :** Dailymotion Video Tiles will be expanded inline which will grow vertically based on the content of the video tiles
 Sample Code: 
@@ -116,10 +116,10 @@ Sample Code:
 >
 </div>
 ```
-> Sample example : [Inline Embed](https://staging.dmvs-apac.com/dm-video-tiles/lab/inline_embed.html)
+> Sample example : [Inline Embed](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/inline_embed.html)
 
 ### Example Links
-- [Anchor Embed - Expand link](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_link.html)
-- [Anchor Embed - Popup expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_popup.html)
-- [Anchor Embed - Inline expand](https://staging.dmvs-apac.com/dm-video-tiles/lab/anchor_expand_inline.html)
-- [Inline Embed](https://staging.dmvs-apac.com/dm-video-tiles/lab/inline_embed.html)
+- [Anchor Embed - Expand link](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/anchor_expand_link.html)
+- [Anchor Embed - Popup expand](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/anchor_expand_popup.html)
+- [Anchor Embed - Inline expand](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/anchor_expand_inline.html)
+- [Inline Embed](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/inline_embed.html)
