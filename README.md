@@ -13,9 +13,9 @@ To use Dailymotion Video Tiles you should create a player first through your [Pa
 
 You need to do 2 things to embed the Dailymotion Video Tiles.
 
-1. Add the [script](https://staging.dmvs-apac.com/dm-video-tiles/dm-video-tiles.js) at the very bottom before `body` end in your website
+1. Add the [script](https://srvr.dmvs-apac.com/dm-video-tiles/dm-video-tiles.min.js) at the very bottom before `body` end in your website
 ```js
-<script src="https://staging.dmvs-apac.com/dm-video-tiles/dm-video-tiles.js"></script>
+<script src="https://srvr.dmvs-apac.com/dm-video-tiles/dm-video-tiles.min.js"></script>
 ```
 3. Add `<div class="dm-video-tiles" `[{PARAMS}](#parameters-available)`></div>` in your target location within the body content.
 
