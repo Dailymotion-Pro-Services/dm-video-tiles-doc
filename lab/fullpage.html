@@ -9,16 +9,60 @@
       
     </head>
     <body style="margin: 0px;">
-
-        <div class="dm-video-tiles"
+        <script type="application/json" id="dm_video_tiles">
+            {
+                "category": [
+                    {
+                        "name": "politics",
+                        "playlist": "x661nk,x661nh,x51ill,x51ild"
+                    },
+                    {
+                        "name": "sports",
+                        "playlist": "x661nh,x51ill,x661nk,x51ild"
+                    },
+                    {
+                        "name": "entertainment",
+                        "playlist": "x51ild,x661nh,x661nk,x51ill"
+                    }
+                ],
+                "city": [
+                    {
+                        "name": "Delhi",
+                        "playlist": "x661nk,x661nh,x51ill,x51ild"
+                    },
+                    {
+                        "name": "Mumbai",
+                        "playlist": "x661nh,x51ill,x661nk,x51ild"
+                    },
+                    {
+                        "name": "Bengaluru",
+                        "playlist": "x51ild,x661nh,x661nk,x51ill"
+                    }
+                ]
+            }
+        </script>
+        <div class="dm-video-tiles mobile-horizontal"
             playerId="x6wze"
             owners="oneindia"
-            featureVideo="x85xu4t"
-            highlightVideos = "x85xvf0,x85xurb,x85xtvb,x85xton,x85xsd5,x85xkqr,x85xjt5"
-            playlistIds="x661nk,x661nh"
-            topicVideos="Sports,Entertainment"
-            channels="filmibeat,oneindiahindi,boldsky,oneindiatamil,gizbot,oneindiatelugu,drivespark,oneindiamalayalam"
+            logoImg="url(https://d3pc1xvrcw35tl.cloudfront.net/assets/images/lokmat-footer-logo-v0.2.png),linear-gradient(1deg, rgb(0 0 0 / 0%), rgb(111 0 0 / 77%), red)"
+
+            data-list-1 = "customized title1=video_ids(x85xvf0,x85xurb,x85xtvb,x85xton,x85xsd5,x85xkqr,x85xjt5)"
+            data-list-2 = "customized title2=video_api(sort=trending)" 
+            data-list-3 = "=video_playlist(x661nk)" 
+
+            data-list-4 = "Recent Playlist=playlist_api(sort=recent)"
+            data-list-5 = "Mumbai=playlist_ids(x661nk,x661nh,x51ill,x51ild)"
+
+            data-list-6 = "customized title8=channel_ids(filmibeat,oneindiahindi,boldsky,oneindiatamil,gizbot,oneindiatelugu,drivespark,oneindiamalayalam)"
+            data-list-7 = "customized title9=channel_api(sort=recent)"
+            
         >
         </div>
-    <script src="https://srvr.dmvs-apac.com/dm-video-tiles/dm-video-tiles.min.js"></script></body>
+
+        
+    <!-- <script src="https://srvr.dmvs-apac.com/dm-video-tiles/dm-video-tiles.min.js"></script> -->
+<script src="https://staging.dmvs-apac.com/dm-video-tiles/dm-video-tiles.js"></script>
+
+
+</body>
 </html>
