@@ -79,7 +79,7 @@ Dailymotion Video Tiles provide `data-list-{sequence_number}` parameter to embed
     2. With [dailymotion DATA-API](https://developers.dailymotion.com/api/#user). Example :
     `data-list-7 = "Recent Channels=channel_api(sort=recent)"`
 
-![Rule](view.jpg)
+![Rule](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/view.jpg)
 
 ### To Add Category and City :
 
