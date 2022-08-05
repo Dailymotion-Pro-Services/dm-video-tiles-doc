@@ -172,7 +172,7 @@ As seen above the code, `dmTilesObj` is an object of information and method. The
 1. **headerDom** : It is container of the header, precisely a `HTMLElement` `div` object.
 2. **singleLive** : If there is a single live video currently `onair`, it will be an object of that video's information.
 3. **isMobile** : It wil be `true` for mobile.
-4. **updateUrl(name:`string`,value:`{pageName&playlistId}`)** : This is the funtion to route different page.
+4. **updateUrl(name:`string`,value:`{pageName&playlistId}`)** : This is the funtion to route the different page.
     1. **name:`string`** : you can set to `category` or `city` to route the category/city page accordingly.
     2. **value:`{pageName&playlistId}`)** : This is a combination of `category`'s/`city`'s name and its playlist.
     Ex:
