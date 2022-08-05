@@ -48,7 +48,8 @@ You need to do 2 things to embed the Dailymotion Video Tiles.
 | `owners` <br /> `Mandatory` | string | You need to put the username of the channels from which the script will search content. If your channel name URL is www.dailymotion.com/channelABC then your username is channelABC. This is case sensitive, meaning channelABC is not the same as Channelabc. To put more than 1 you can separate by ","
 | `playerId` <br /> `Mandatory` | string | You can get `PLAYER_ID` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/embed/players) in the player tab, inside the embed menu. |
 | `logoImg` <br /> `Mandatory` | string | Add your logo image url for header |
-| `data-list-{sequence_number}` | string | To add different type list. Ex : `data-list-1`. Check [Embeding different type of list]()|
+| `data-list-{sequence_number}` | string | To add different type list. Ex : `data-list-1`. Check [Embeding different type of list](#embedding-different-type-of-lists)|
+| `customHeader` | boolean | Set it `true` to customize the header. Check [Customize Your Header](#customize-your-header)|
 | `videoTilesPreview` | boolean | If you are adding preview of you Video Tiles page, set it `true`. [Learn More](#embed-a-preview-of-video-tiles) |
 | `videoTilesLink` | string | If you are adding preview of you Video Tiles page, add its `URL`. [Learn More](#embed-a-preview-of-video-tiles)|
 
@@ -130,14 +131,71 @@ Assuming that you have already a `video-hub` page created by Dailymotion video t
 ```
 > Just add one `data-list-1` which will be used to show the preview.
 
+### Customize Your Header : 
+
+Dailymotion video tiles creates its own header with given `logoImg`, `Category` and `City`. But it can be customized if you set `customHeader` true. Adding this param, Dailymotion video tiles will trigger a CustomEvent(`tiles-header-render`) on document after creating a container(`div`) of the header.
+
+The `tiles-header-render` event conveys information and methods which can be used to customize the header.
+
+Example code:
+```js
+    // On header create get info
+    document.addEventListener("tiles-header-render",(e)=>{
+        let dmTilesObj = e.detail
+        /**
+         * dmTilesObj = {
+         *  headerDom : {Header Dom object}
+         *  singleLive : { //If there is one live video
+         *                  thumbnail_240_url: string;
+                            title: string;
+                            id: string;
+                            created_time: number;
+                            duration: number;
+                            url: string;
+                            "owner.screenname": string;
+                            "owner.username": string;
+                            channel: string;
+                            onair: boolean;
+         *               } or null
+            isMobile: {true if its mobile},
+            updateUrl : { funtion to route category or city page}
+                        (
+                            name:string,value:{pageName&playlistId}
+                        )
+
+         * }
+         */
+    })
+```
+As seen above the code, `dmTilesObj` is an object of informations and method. These are
+
+1. **headerDom** : It is container of the header, precisely a `HTMLElement` object.
+2. **singleLive** : If there is a single live video currently `onair`, it will be an object of that video's information.
+3. **isMobile** : It wil be `true` for mobile.
+4. **updateUrl(name:`string`,value:`{pageName&playlistId}`)** : This is the funtion to route different page.
+    1. **name:`string`** : you can set to `category` or `city` to route the category/city page accordingly.
+    2. **value:`{pageName&playlistId}`)** : This is a combination of `category`'s/`city`'s name and its playlist.
+    Ex:
+    ```js
+        // for category
+        dmTilesObj.updateUrl({
+            name: "category",
+            value: "News"+"&"+"`PLAYLIST_ID`,`PLAYLIST_ID`,`PLAYLIST_ID`"
+        });
+        // for city
+        dmTilesObj.updateUrl({
+            name: "city",
+            value: "Hello Pune"+"&"+"`PLAYLIST_ID`"
+        });
+    ```
+> Check the [example links](#example-links) for more details.
 
 ### Features : 
 
 1. The first playlist will always be treated as a `Hero playlist` that shows previews of videos from the playlist at the top of the page.
 2. If there are `live` videos found on a given channel, Dailymotion video tiles will add that list of `live` videos as the first playlist.
 3. If you land the Video-hub page ( created by Video Tiles ) by clicking [Preview Embed](#embed-a-preview-of-video-tiles), the preview playlist will be added as the first playlist.
-4. Day-Night Mode is added at the top right corner.
-5. Dailymotion Video Tiles is a single-page application. Some Routes are described below:
+4. Dailymotion Video Tiles is a single-page application. Some Routes are described below:
     1. Clicking on the `Video Card` will land you video page. The selected video will play and the related playlist will show below the player.
     2. Clicking on the `Playlist Card` will land you Playlist page. The first video of the playlist will show as a preview and the rest videos will show below.
     3. Clicking on the `Channel Card` will land your channel page. All the playlists from that channel will show like video tiles and the first playlist will have a `Hero playlist` UI.
@@ -145,5 +203,8 @@ Assuming that you have already a `video-hub` page created by Dailymotion video t
 ### Example Links :
 
 - [Video Hub](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/lokmat_fullpage.html)
+- [Video Hub- Customized Header](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/lokmat_customhead.html)
 - [Preview of Video Hub](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/dm_video_tiles_preview.html)
 
+
+<!-- 4. Day-Night Mode is added at the top right corner. -->
