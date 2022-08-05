@@ -131,11 +131,11 @@ Assuming that you have already a `video-hub` page created by Dailymotion video t
 ```
 > Just add one `data-list-1` which will be used to show the preview.
 
-### Customize Your Header : 
+### Customize Your Header: 
 
-Dailymotion video tiles creates its own header with given `logoImg`, `Category` and `City`. But it can be customized if you set `customHeader` true. Adding this param, Dailymotion video tiles will trigger a CustomEvent(`tiles-header-render`) on document after creating a container(`div`) of the header.
+Dailymotion video tiles create its header with the given `logoImg`, `Category` and `City`. But it can be customized if you set `customHeader` true. Adding this param, Dailymotion video tiles will trigger a CustomEvent(`tiles-header-render`) on the `document` after creating a container(`div`) of the header.
 
-The `tiles-header-render` event conveys information and methods which can be used to customize the header.
+The `tiles-header-render` event conveys information and method which can be used to customize the header.
 
 Example code:
 ```js
@@ -167,7 +167,7 @@ Example code:
          */
     })
 ```
-As seen above the code, `dmTilesObj` is an object of informations and method. These are
+As seen above the code, `dmTilesObj` is an object of information and method. These are
 
 1. **headerDom** : It is container of the header, precisely a `HTMLElement` object.
 2. **singleLive** : If there is a single live video currently `onair`, it will be an object of that video's information.
