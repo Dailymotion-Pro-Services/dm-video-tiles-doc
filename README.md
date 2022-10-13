@@ -205,6 +205,6 @@ As seen above the code, `dmTilesObj` is an object of information and method. The
 - [Video Hub](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/lokmat_fullpage.html)
 - [Video Hub- Customized Header](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/lokmat_customhead.html)
 - [Preview of Video Hub](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/dm_video_tiles_preview.html)
-
+- [Redirect Mechanism](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/redirect_url.html)
 
 <!-- 4. Day-Night Mode is added at the top right corner. -->
