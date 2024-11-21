@@ -80,7 +80,7 @@ Dailymotion Video Tiles provide `data-list-{sequence_number}` parameter to embed
     2. With [dailymotion DATA-API](https://developers.dailymotion.com/api/#user). Example :
     `data-list-7 = "Recent Channels=channel_api(sort=recent)"`
 
-![Rule](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/view.jpg)
+![Rule](https://dailymotion-pro-services.github.io/dm-video-tiles-doc/lab/view.jpg)
 
 ### To Add Category and City :
 
@@ -202,10 +202,10 @@ As seen above the code, `dmTilesObj` is an object of information and method. The
 
 ### Example Links :
 
-- [Video Hub](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/fullpage.html)
-- [Video Hub- Lokmat](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/lokmat_fullpage.html)
-- [Video Hub- Customized Header](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/lokmat_customhead.html)
-- [Preview of Video Hub](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/dm_video_tiles_preview.html)
-- [Redirect Mechanism](https://dmvs-apac.github.io/dm-video-tiles-doc/lab/redirect_url.html)
+- [Video Hub](https://dailymotion-pro-services.github.io/dm-video-tiles-doc/lab/fullpage.html)
+- [Video Hub- Lokmat](https://dailymotion-pro-services.github.io/dm-video-tiles-doc/lab/lokmat_fullpage.html)
+- [Video Hub- Customized Header](https://dailymotion-pro-services.github.io/dm-video-tiles-doc/lab/lokmat_customhead.html)
+- [Preview of Video Hub](https://dailymotion-pro-services.github.io/dm-video-tiles-doc/lab/dm_video_tiles_preview.html)
+- [Redirect Mechanism](https://dailymotion-pro-services.github.io/dm-video-tiles-doc/lab/redirect_url.html)
 
 <!-- 4. Day-Night Mode is added at the top right corner. -->
